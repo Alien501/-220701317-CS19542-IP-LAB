@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: .1rem;
+    flex-wrap: wrap;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --color-primary: #1E62CB;
+    --color-secondary: #B8D4FF;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+/* Header design - START */
+.resume-top-container {
+    height: 130px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-height: max-content;
+}
+
+.name-container span {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact-details-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line {
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-white);
+}
+
+.contact-details-container span {
+    font-size: .7rem;
+}
+
+.social-links-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-links-container a {
+    display: block;
+    text-decoration: underline;
+    color: var(--color-white);
+    font-size: .8rem;
+}
+
+/* Header design - END */
+
+.resume-content-container {
+    display: grid;
+    grid-template-columns: 230px 2fr;
+}
+
+/* Left desing - START */
+
+.left-item-container {
+    width: 230px;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.left-heading {
+    text-align: center !important;
+}
+
+.left-heading h4 {
+    padding: 10px;
+}
+
+.technical-skill-container {
+    padding: 5px;
+}
+
+.technical-skill-container h5 {
+    font-size: .9rem;
+}
+
+.technical-skill-container ul li{
+    list-style: disc;
+    list-style-position: inside;
+    margin: 10px auto;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.technical-skill-container ul li a {
+    text-decoration: underline;
+    color: var(--color-black);
+}
+/* Left desing - END */
+
+/* Main side - START */
+
+.main-item-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-text {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.sec {
+    margin-top: 10px;
+}
+
+.section-heading {
+    font-size: .5rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.edu-detail-container {
+    width: 100%;
+    text-transform: none;
+}
+
+.edu-card {
+    padding: 10px;
+    width: 100%;
+}
+
+.edu-top {
+    color: var(--color-black);
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edu-top span:nth-child(1) {
+    font-weight: 600;
+}
+
+.edu-top span:nth-child(2) {
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.edu-bottom {
+    width: 90%;
+    color: var(--color-black);
+    font-size: .8rem;
+    line-height: 1rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.experience-container {
+    color: var(--color-black);
+    margin-top: 5px;
+    text-transform: none;
+}
+
+.experience-container h3{
+    font-size: .9rem;
+}
+
+.experience-container span{
+    font-size: .8rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 2px;
+}
+
+.experience-container li {
+    font-size: .7rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.project-section {
+    margin-top: 10px;
+}
+
+.project-container {
+    margin-left: 15px;
+    font-size: .9rem;
+    color: var(--color-black);
+    text-transform: none;
+    margin-top: 5px;
+}
+
+.project-heading a {
+    text-decoration: underline;
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.project-container li span:nth-child(2) {
+    font-size: .9rem;
+}
+
+.project-container li span:nth-child(3) {
+    display: block;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.awards-container {
+    margin-left: 15px;
+}
+
+.award {
+    display: block;
+    font-size: .8rem;
+    color: var(--color-black);
+    padding: 5px;
+}
+
+.award li span:nth-child(1) {
+    font-weight: bold;
+}
+
+.award li span:nth-child(2) {
+    font-size: .7rem;
+    font-weight: 500;
+    letter-spacing: none;
+}
+/* Main side - END */
